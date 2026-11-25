@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galeria · Parede</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="faixa">
+    <div class="faixa-conteudo">
+      <a class="marca" href="index.html">Parede</a>
+      <nav class="menu" aria-label="Principal">
+        <a href="index.html" aria-current="page">Galeria</a>
+        <a href="pages/categorias.html">Categorias</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" class="pagina">
+    <div id="avisos" class="avisos" role="status"></div>
+    <noscript><p class="sem-js">Ative o JavaScript do navegador para usar o sistema.</p></noscript>
+
+    <section class="topo-pagina">
+      <div>
+        <h1>Galeria</h1>
+        <p id="resumo" class="resumo">Carregando…</p>
+      </div>
+      <a class="botao" href="pages/wallpaper-form.html">Cadastrar wallpaper</a>
+    </section>
+
+    <form id="filtros" class="filtros">
+      <label class="campo campo-busca">
+        <span>Buscar</span>
+        <input type="search" name="q" placeholder="Título, autor ou descrição">
+      </label>
+      <label class="campo">
+        <span>Categoria</span>
+        <select name="categoria">
+          <option value="">Todas</option>
+        </select>
+      </label>
+      <label class="campo">
+        <span>Orientação</span>
+        <select name="orientacao">
+          <option value="">Todas</option>
+          <option value="Paisagem">Paisagem</option>
+          <option value="Retrato">Retrato</option>
+          <option value="Quadrado">Quadrado</option>
+        </select>
+      </label>
+      <label class="campo">
+        <span>Ordenar por</span>
+        <select name="ordem">
+          <option value="recentes">Mais recentes</option>
+          <option value="antigos">Mais antigos</option>
+          <option value="titulo">Título (A–Z)</option>
+          <option value="resolucao">Maior resolução</option>
+        </select>
+      </label>
+      <label class="marcar">
+        <input type="checkbox" name="favoritos" value="1">
+        Só favoritos
+      </label>
+      <button id="limpar" class="botao botao-suave" type="button">Limpar filtros</button>
+    </form>
+
+    <div id="chips" class="chips" aria-label="Tags mais usadas"></div>
+
+    <p id="carregando" class="carregando">Carregando wallpapers…</p>
+    <ul id="grade" class="grade"></ul>
+
+    <section id="vazio" class="vazio" hidden>
+      <h2>Nenhum wallpaper encontrado</h2>
+      <p>Limpe os filtros ou cadastre um novo wallpaper.</p>
+      <p><a class="botao" href="pages/wallpaper-form.html">Cadastrar wallpaper</a></p>
+    </section>
+  </main>
+
+  <footer class="rodape">Projeto Integrado · DWS, POO e BD · Cadastro de papéis de parede</footer>
+  <script src="js/comum.js"></script>
+  <script src="js/galeria.js"></script>
+</body>
+</html>

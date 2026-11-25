@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wallpaper · Parede</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="faixa">
+    <div class="faixa-conteudo">
+      <a class="marca" href="../index.html">Parede</a>
+      <nav class="menu" aria-label="Principal">
+        <a href="../index.html" aria-current="page">Galeria</a>
+        <a href="categorias.html">Categorias</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" class="pagina">
+    <div id="avisos" class="avisos" role="status"></div>
+    <noscript><p class="sem-js">Ative o JavaScript do navegador para usar o sistema.</p></noscript>
+
+    <section id="detalhe" class="detalhe" hidden>
+      <figure class="detalhe-imagem">
+        <img id="imagem" alt="">
+      </figure>
+
+      <div class="detalhe-info">
+        <h1 id="titulo"></h1>
+        <p id="descricao" class="descricao"></p>
+
+        <dl class="ficha">
+          <dt>Categoria</dt><dd id="categoria"></dd>
+          <dt>Resolução</dt><dd id="resolucao"></dd>
+          <dt>Autor</dt><dd id="autor"></dd>
+          <dt>Cadastrado em</dt><dd id="data"></dd>
+          <dt>Tags</dt><dd id="tags"></dd>
+        </dl>
+
+        <div class="acoes">
+          <a id="editar" class="botao" href="#">Editar</a>
+          <a id="baixar" class="botao botao-suave" href="#" download>Baixar imagem</a>
+          <button id="favoritar" class="botao botao-suave" type="button">Adicionar aos favoritos</button>
+          <button id="excluir" class="botao botao-perigo" type="button">Excluir</button>
+        </div>
+        <p><a href="../index.html">Voltar para a galeria</a></p>
+      </div>
+    </section>
+
+    <section id="nao-encontrado" class="vazio" hidden>
+      <h1>Wallpaper não encontrado</h1>
+      <p>Ele pode ter sido excluído.</p>
+      <p><a class="botao" href="../index.html">Voltar para a galeria</a></p>
+    </section>
+  </main>
+
+  <footer class="rodape">Projeto Integrado · DWS, POO e BD · Cadastro de papéis de parede</footer>
+  <script src="../js/comum.js"></script>
+  <script src="../js/wallpaper.js"></script>
+</body>
+</html>

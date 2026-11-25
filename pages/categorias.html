@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Categorias · Parede</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="faixa">
+    <div class="faixa-conteudo">
+      <a class="marca" href="../index.html">Parede</a>
+      <nav class="menu" aria-label="Principal">
+        <a href="../index.html">Galeria</a>
+        <a href="categorias.html" aria-current="page">Categorias</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" class="pagina">
+    <div id="avisos" class="avisos" role="status"></div>
+    <noscript><p class="sem-js">Ative o JavaScript do navegador para usar o sistema.</p></noscript>
+
+    <section class="topo-pagina">
+      <div>
+        <h1>Categorias</h1>
+        <p class="resumo">Toda categoria agrupa wallpapers do mesmo assunto.</p>
+      </div>
+      <a class="botao" href="categoria-form.html">Cadastrar categoria</a>
+    </section>
+
+    <div id="tabela" class="tabela-rolagem" hidden>
+      <table class="tabela">
+        <thead>
+          <tr><th>Nome</th><th>Descrição</th><th class="num">Wallpapers</th><th>Ações</th></tr>
+        </thead>
+        <tbody id="corpo"></tbody>
+      </table>
+    </div>
+
+    <section id="vazio" class="vazio" hidden>
+      <h2>Nenhuma categoria cadastrada</h2>
+      <p>Crie a primeira categoria para começar a cadastrar wallpapers.</p>
+      <p><a class="botao" href="categoria-form.html">Cadastrar categoria</a></p>
+    </section>
+  </main>
+
+  <footer class="rodape">Projeto Integrado · DWS, POO e BD · Cadastro de papéis de parede</footer>
+  <script src="../js/comum.js"></script>
+  <script src="../js/categorias.js"></script>
+</body>
+</html>

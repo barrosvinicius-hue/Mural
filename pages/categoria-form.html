@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastrar categoria · Parede</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="faixa">
+    <div class="faixa-conteudo">
+      <a class="marca" href="../index.html">Parede</a>
+      <nav class="menu" aria-label="Principal">
+        <a href="../index.html">Galeria</a>
+        <a href="categorias.html" aria-current="page">Categorias</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" class="pagina">
+    <div id="avisos" class="avisos" role="status"></div>
+    <noscript><p class="sem-js">Ative o JavaScript do navegador para usar o sistema.</p></noscript>
+
+    <section class="topo-pagina">
+      <h1 id="titulo-pagina">Cadastrar categoria</h1>
+    </section>
+
+    <form id="formulario" class="formulario formulario-simples">
+      <label class="campo">
+        <span>Nome</span>
+        <input type="text" name="nome" maxlength="40" required>
+      </label>
+      <label class="campo">
+        <span>Descrição</span>
+        <textarea name="descricao" rows="3" maxlength="200"></textarea>
+      </label>
+      <div class="acoes">
+        <button id="salvar" class="botao" type="submit">Cadastrar categoria</button>
+        <a class="botao botao-suave" href="categorias.html">Cancelar</a>
+      </div>
+    </form>
+  </main>
+
+  <footer class="rodape">Projeto Integrado · DWS, POO e BD · Cadastro de papéis de parede</footer>
+  <script src="../js/comum.js"></script>
+  <script src="../js/categoria-form.js"></script>
+</body>
+</html>
